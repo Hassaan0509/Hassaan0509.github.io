@@ -193,17 +193,17 @@ function navHighLighter() {
   });
 }
 
-function workCard() {
-  let scrollY = window.pageYOffset;
-  work.forEach((current, i) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 500;
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      if (i % 2 === 0) current.classList.add("animationSectionRight");
-      else current.classList.add("animationSectionLeft");
-    }
-  });
-}
+// function workCard() {
+//   let scrollY = window.pageYOffset;
+//   work.forEach((current, i) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 500;
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       if (i % 2 === 0) current.classList.add("animationSectionRight");
+//       else current.classList.add("animationSectionLeft");
+//     }
+//   });
+// }
 
 function scrollUp() {
   let scrollY = window.pageYOffset;
@@ -215,8 +215,8 @@ function scrollUp() {
 }
 
 const sections = document.querySelectorAll("section[id]");
-const work = document.querySelectorAll(".work__card");
-window.addEventListener("scroll", workCard);
+// const work = document.querySelectorAll(".work__card");
+// window.addEventListener("scroll", workCard);
 window.addEventListener("scroll", navHighLighter);
 window.addEventListener("scroll", scrollUp);
 
