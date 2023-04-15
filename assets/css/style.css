@@ -94,7 +94,7 @@ ul {
   list-style: none;
 }
 
-.experience__info{
+.experience__info {
   font-size: var(--small-font-size);
   list-style-type: disc;
   display: flex;
@@ -1544,6 +1544,12 @@ textarea.input {
 
   .footer__links {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .buttonCv {
+    margin-top: 6px;
   }
 }
 
