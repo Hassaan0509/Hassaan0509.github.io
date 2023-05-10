@@ -295,6 +295,10 @@ input {
   background-attachment: fixed;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .home__container {
   position: relative;
   height: 100%;
