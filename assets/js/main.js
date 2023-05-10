@@ -75,7 +75,6 @@ linkWork.forEach((l) => l.addEventListener("click", activeWork));
 
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("work__button")) {
-    document.body.classList.add("modal-open");
     togglePortfolioPopup();
     portfolioDetails(e.target.parentElement);
   }
@@ -83,7 +82,7 @@ document.addEventListener("click", (e) => {
 
 function togglePortfolioPopup() {
   document.querySelector(".portfolio__popup").classList.toggle("open");
-  document.body.classList.remove("modal-open");
+  document.body.classList.toggle("modal-open");
 }
 
 document
