@@ -13,8 +13,9 @@
   --body-color: hsl(var(--hue-color), 19%, 5%);
   --box-color: hsl(var(--hue-color), 14%, 10%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+  --scroll-thumb-color: var(--skin-color);
 
+  /* hsl(var(--hue-color), 12%, 26%) */
   /*===== Font and Typography =====*/
   --body-font: "Poppins", sans-serif;
 
@@ -283,10 +284,15 @@ input {
 /*===== Home Section =====*/
 
 .home {
-  background: url("../img/home-bg.png");
-  background-size: cover;
+  background: url("../img/home-bg.png")  no-repeat center;;
+  /* background-size: cover;
   background-position: center center;
+  height: 100vh; */
   height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .home__container {
@@ -1312,6 +1318,7 @@ textarea.input {
   }
 
   .nav__toggle {
+    z-index: 999;
     display: flex;
   }
 

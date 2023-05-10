@@ -2,7 +2,8 @@
 
 const navMenu = document.getElementById("sidebar"),
   navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+  navClose = document.getElementById("nav-close"),
+  navLink = document.querySelectorAll(".nav__link");
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
@@ -17,10 +18,15 @@ if (navToggle) {
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
 
-if (navClose) {
+if (navClose || navLink) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-sidebar");
   });
+  navLink.forEach((n) =>
+    n.addEventListener("click", () => {
+      navMenu.classList.remove("show-sidebar");
+    })
+  );
 }
 /*=============== SKILLS TABS ===============*/
 
