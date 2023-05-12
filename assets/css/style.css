@@ -1273,9 +1273,9 @@ textarea.input {
     margin-right: var(--mb-1-5);
   }
 
-  .home__social {
+  /* .home__social {
     display: none;
-  }
+  } */
 
   .sidebar {
     width: 100%;
