@@ -1662,7 +1662,6 @@ textarea.input {
 @keyframes onScrollSectionLeft {
   0% {
     opacity: 0;
-    /* transform: translateY(-200%); */
   }
 
   50%{
@@ -1671,7 +1670,6 @@ textarea.input {
 
   100% {
     opacity: 1;
-    /* transform: translateY(0%); */
   }
 }
 
