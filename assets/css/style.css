@@ -284,7 +284,8 @@ input {
 /*===== Home Section =====*/
 
 .home {
-  background: url("../img/home-bg.png")  no-repeat center;;
+  background: url("../img/home-bg.png") no-repeat center;
+  ;
   /* background-size: cover;
   background-position: center center;
   height: 100vh; */
@@ -1276,7 +1277,7 @@ textarea.input {
   /* .home__social {
     display: none;
   } */
-  
+
 
   .sidebar {
     width: 100%;
@@ -1635,41 +1636,59 @@ textarea.input {
   }
 }
 
-/* .animationSectionRight {
-  animation-name: onScrollSectionRight;
-  animation-duration: 1s;
+.animationAboutSectionRight {
+  animation: onScrollAboutSectionRight .7s ease-in-out;
 }
 
-.animationSectionLeft {
-  animation-name: onScrollSectionLeft;
-  animation-duration: 1s;
+.animationAboutSectionLeft {
+  animation: onScrollAboutSectionLeft .7s ease-in-out;
 }
 
-@keyframes onScrollSectionRight {
+/* .qualificationAnimation{
+  animation: onScrollQualification .7s ease-in;
+}
+
+@keyframes onScrollQualification {
   0% {
     opacity: 0;
-  }
-
-  50%{
-    opacity: 0;
+    transform: translateY(200%);
   }
 
   100% {
     opacity: 1;
+    transform: translateY(0%);
   }
-}
+} */
 
-@keyframes onScrollSectionLeft {
+@keyframes onScrollAboutSectionRight {
   0% {
     opacity: 0;
+    transform: translateX(50%);
   }
 
-  50%{
-    opacity: 0;
+  50% {
+    opacity: 0.5;
   }
 
   100% {
     opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes onScrollAboutSectionLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
@@ -1690,4 +1709,4 @@ textarea.input {
   100% {
     opacity: 1;
   }
-} */
+}

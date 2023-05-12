@@ -178,29 +178,63 @@ function navHighLighter() {
       document
         .querySelector('.nav__menu a[href="#' + sectionId + '"]')
         .classList.add("active-link", "animationSidebar");
-      if (i % 2 === 0)
-        document
-          .getElementById(sectionId)
-          .classList.add("animationSectionRight");
-      else
-        document
-          .getElementById(sectionId)
-          .classList.add("animationSectionLeft");
     } else {
       document
         .querySelector('.nav__menu a[href="#' + sectionId + '"]')
         .classList.remove("active-link", "animationSidebar");
-      // if (i % 2 === 0)
-      //   document
-      //     .getElementById(sectionId)
-      //     .classList.remove("animationSectionRight");
-      // else
-      //   document
-      //     .getElementById(sectionId)
-      //     .classList.remove("animationSectionLeft");
     }
   });
 }
+
+// function animationSection() {
+//   let scrollY = window.pageYOffset;
+//   sections.forEach((current, i) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 550,
+//       sectionId = current.getAttribute("id");
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       if (i % 2 === 0)
+//         document
+//           .getElementById(sectionId)
+//           .classList.add("animationSectionRight");
+//       else
+//         document
+//           .getElementById(sectionId)
+//           .classList.add("animationSectionLeft");
+//     }
+//   });
+// }
+
+function aboutSection() {
+  let img = document.querySelectorAll("#about__img");
+  let data = document.querySelectorAll("#about__data");
+  let scrollY = window.pageYOffset;
+  let current = document.querySelector(".about__container");
+  const sectionHeight = current.offsetHeight;
+  const sectionTop = current.offsetTop - 600;
+  if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+    img.forEach((current) => {
+      current.classList.add("animationAboutSectionRight");
+    });
+    data.forEach((current) => {
+      current.classList.add("animationAboutSectionLeft");
+    });
+  }
+}
+
+// function qualificationSection() {
+//   let scrollY = window.pageYOffset;
+//   let sections = document.querySelectorAll(".timeline__item");
+//   let top= document.querySelector(".qualification__container");
+//   sections.forEach((current, i) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 450,
+//       sectionId = current.getAttribute("id");
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       current.classList.add("active-link", "animationSidebar");
+//     }
+//   });
+// }
 
 // function workCard() {
 //   let scrollY = window.pageYOffset;
@@ -228,5 +262,7 @@ const sections = document.querySelectorAll("section[id]");
 // window.addEventListener("scroll", workCard);
 window.addEventListener("scroll", navHighLighter);
 window.addEventListener("scroll", scrollUp);
+window.addEventListener("scroll", aboutSection);
+// window.addEventListener("scroll", qualificationSection);
 
 /*=============== SHOW SCROLL UP ===============*/
