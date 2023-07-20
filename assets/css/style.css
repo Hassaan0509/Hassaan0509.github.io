@@ -202,17 +202,18 @@ input {
 .nav__list {
   display: flex;
   flex-direction: row-reverse;
-  margin: -2px auto 0 auto;
+  margin: -2px 70px 0 auto;
+  overflow: hidden;
 }
 
 .nav__link {
   float: right;
   height: 100%;
   line-height: 100px;
-  padding: 0 0.9rem;
+  padding: 0 0.8rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   position: relative;
   transition: 0.4s;
 }
