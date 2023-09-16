@@ -7,11 +7,11 @@
   --hue-color: 242;
 
   /* HSL Color Mode */
-  --skin-color: hsl(342, 92%, 46%);
+  --skin-color: hsl(342, 92%, 45%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
-  --body-color: hsl(var(--hue-color), 19%, 5%);
-  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --body-color: #29353f;
+  --box-color: #354a59;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
   --scroll-thumb-color: var(--skin-color);
 
@@ -427,7 +427,7 @@ body.modal-open {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #343a40;
+  background-color: var(--box-color);
   z-index: -1;
   transform-origin: center;
   transition: 0.3s;
