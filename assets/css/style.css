@@ -161,7 +161,7 @@ input {
 
 .sidebar {
   position: fixed;
-  width: 100px;
+  width: 70px;
   height: 100vh;
   background-color: var(--body-color);
   border-right: 1px solid var(--box-color);
@@ -208,8 +208,8 @@ input {
 
 .nav__link {
   float: right;
-  height: 100%;
-  line-height: 100px;
+  height: 120%;
+  line-height: 70px;
   padding: 0 0.8rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -279,7 +279,7 @@ input {
 /*=============== MAIN ===============*/
 
 .main {
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 /*===== Home Section =====*/
@@ -1313,6 +1313,7 @@ textarea.input {
   .nav__link {
     padding: 1rem 0;
     line-height: 1.5;
+      height: 100%;
   }
 
   .nav__link.active-link::after,
